@@ -6,8 +6,8 @@ def encode_credentials(username, password):
 def login():
     correct_username = "SATISH-BHAI"
     correct_password = "T.S.BRAND"
-    username_input = input("Enter username:")
-    password_input = input("Enter password:")
+    username_input = input("SATISH-BHAI:")
+    password_input = input("T.S.BRAND:")
     encoded_username, encoded_password = encode_credentials(correct_username, correct_password)
     if username_input == encoded_username and password_input == encoded_password:
         print("Login successful!")
@@ -15,3 +15,4 @@ def login():
         print("Incorrect username or password. Please try again.")
 
 login()
+
